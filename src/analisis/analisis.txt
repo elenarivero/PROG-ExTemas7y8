@@ -1,0 +1,38 @@
+class Paciente implements Comparable<Paciente>
+	- String nombre
+	- String direccion
+	- int telefono
+	- boolean baja
+	
+	+ Paciente(String nombre, int telefono)
+	+ Paciente(String nombre, String direccion, int telefono, boolean baja)
+	
+	+ getNombre(): String
+	+ getDireccion(): String
+	+ getTelefono(): int
+	+ isBaja(): boolean
+	
+	+ setDireccion(String dir)
+	+ setTelefono(int tel)
+	+ setBaja(boolean baja)
+	
+	+ toString(): String
+	+ equals(Object o): boolean
+	+ compareTo(Paciente p): int
+	
+exception TelefonoInvalidoException
+
+class GestionFicheros
+	- static final rutaFichero = "src/ficheros/pacientes.txt"
+	+ static leeFichero(): TreeSet<Paciente>
+	+ static escribeFichero(TreeSet<Paciente> pacientes)
+	
+class GestionCRUD
+	- static TreeSet<Paciente> listaPacientes
+	+ static buscaPaciente(Paciente p): Paciente
+	+ static inicializarLista()
+	+ static addPaciente(Paciente p): boolean
+	+ static listarPacientes()
+	+ static modDireccion(Paciente p, String direccion): boolean
+	+ static modBaja(Paciente p, boolean baja): boolean
+	+ static eliminarPaciente(Paciente p): boolean

@@ -1,0 +1,4 @@
+Paco Pérez Ramírez;Calle Inventada nº 5;666666666;Sí
+María Martínez García;Calle Amor nº 10;652369874;No
+Macarena Gómez Domínguez;Calle Satsuma nº 32;698523654;No
+Marcos Fernández Bravo;Calle Niebla nº 65;621456987;Sí
