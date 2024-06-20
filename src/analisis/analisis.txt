@@ -31,6 +31,7 @@ class GestionCRUD
 	- static TreeSet<Paciente> listaPacientes
 	+ static buscaPaciente(Paciente p): Paciente
 	+ static inicializarLista()
+	+ static guardar()
 	+ static addPaciente(Paciente p): boolean
 	+ static listarPacientes()
 	+ static modDireccion(Paciente p, String direccion): boolean
