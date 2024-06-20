@@ -10,7 +10,7 @@ public class Principal {
 
 	private static final Scanner sc = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws TelefonoInvalidoException {
 		int opc;
 		Paciente pac;
 		
@@ -39,7 +39,9 @@ public class Principal {
 				GestionCRUD.listarPacientes();
 				break;
 			case 3:
-				
+				Paciente paciente = new Paciente("Macarena Gómez Domínguez", 698523654);
+				boolean res = GestionCRUD.modDireccion(paciente, "Nueva direccion");
+				System.out.println(res);
 				break;
 			case 4: // Eliminación de paciente
 				pac = pedirNombreTelfno();
